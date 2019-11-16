@@ -30,7 +30,5 @@ Note: The double quotes are not required
 3. git pull
 4. git push -u origin "branch name"
 
-see my changes
-
 
 
