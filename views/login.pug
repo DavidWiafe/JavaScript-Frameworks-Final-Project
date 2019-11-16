@@ -1,0 +1,22 @@
+﻿// 
+ File Name: register.pug
+ Author: David Wiafe
+ Description: allow users to create an account
+
+include header
+
+block content
+
+ h1 Login
+
+ form(method="post" action="/login")
+  
+  div
+   label Username
+   input(name="username")
+
+  div
+   label Password
+   input(name="password" type="password")
+
+  input(type="submit" value="Login")
