@@ -40,8 +40,7 @@ router.get('/media', function (req, res) {
 });
 
 
-// POST: 
-
+// POST: add a new media post
 router.post('/media/add', function (req, res) {
 
     console.log("test the date: " + req.body.dateTest);
