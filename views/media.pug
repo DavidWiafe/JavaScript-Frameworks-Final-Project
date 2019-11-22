@@ -9,6 +9,7 @@ include header
 block content
 
  h1 Media Feed #{todayDate}
+ 
  div
   form(method="post" action="/media/add")
    div
@@ -25,6 +26,22 @@ block content
      input(type="text" name="username" value=username)
 
    input(type="submit" value="Post")
+
+
+ div(class="listOfPosts")
+  table
+   thead
+    th Date
+    th Username
+    th Message
+
+   tbody
+    each post in posts
+     tr
+      td #{post.date}
+      td #{post.username}
+      td #{post.message}
+
 
 
 

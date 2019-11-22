@@ -34,9 +34,25 @@ router.get('/media', function (req, res) {
 
     var todaysDate = year +"-"+ month +"-"+ day;
 
-    console.log();
+  
+
+    Media.find(function (err, mediaPosts) {
+
+        if (err) {
+
+            console.log(err);
+        } else {
+
+           // var theDate = mediaPosts.date;
+
+            //theDate.toString();
+
+            res.render('media', { posts: mediaPosts, username: req.user.username, todayDate: todaysDate } );
+        }
+
+    });
    
-    res.render('media', { username: req.user.username, todayDate: todaysDate} );
+   // res.render('media', { username: req.user.username, todayDate: todaysDate} );
 });
 
 
