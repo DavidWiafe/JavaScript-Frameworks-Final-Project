@@ -7,7 +7,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+//var routes = require('./routes/index');
 var users = require('./routes/users');
 
 // custom model requires
@@ -17,6 +17,8 @@ var register = require('./routes/register');
 
 var login = require('./routes/login');
 
+var media = require('./routes/media');
+ 
 // require npm - mongoose
 var mongoose = require('mongoose');
 
@@ -33,7 +35,7 @@ var session = require('express-session');
 var passwordHash = require('password-hash');
 
 //set connection to localhost/Lesson6 DB in mongoDB
-mongoose.connect('mongodb://localhost/Lesson6');
+//mongoose.connect('mongodb://localhost/Lesson6');
 
 var app = express();
 
@@ -60,11 +62,12 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/', routes);
+//app.use('/', routes);
 app.use('/users', users);
 
 app.use('/register', register);
 app.use('/login', login);
+app.use('/', media);
 
 // passport - Serialize user
 passport.serializeUser(function (user, done) {
@@ -136,6 +139,10 @@ function verifyPassword(userPassword, hashedPassword) {
     return passwordHash.verify(userPassword, hashedPassword);
 
 }
+
+//connect to my live mongoDB server
+const uri = "mongodb+srv://David_Wiafe:SuperStrongPass123@cluster0-wgaad.mongodb.net/test?retryWrites=true&w=majority";
+var db = mongoose.connect(uri).catch((error) => { console.log(error); });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

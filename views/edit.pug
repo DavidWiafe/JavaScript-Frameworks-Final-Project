@@ -1,0 +1,20 @@
+﻿include header
+
+block content
+
+ h1 Edit post
+ div
+  form(method="post" action="/media/edit")
+  
+   input(name="object_id" type="text" value=onEdit._id)
+
+   div
+    label Message
+    input(name="message" type="text" value=onEdit.message)
+
+   input(type="submit" value="Save Edited Post")
+
+
+include footer
+
+
