@@ -54,6 +54,9 @@
     <Content Include="views\add.pug">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\edit.pug">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\footer.pug">
       <SubType>Code</SubType>
     </Content>
@@ -67,6 +70,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\media.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\post.pug">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\register.pug">

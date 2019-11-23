@@ -1,0 +1,29 @@
+﻿include header
+
+block content
+ h1 Recent Posts
+
+ div(class="listOfPosts")
+  table
+   thead
+    th Date
+    th Username
+    th Message
+    if boolValue
+     th Edit
+     th Delete
+
+   tbody
+    each post in posts
+     tr
+      td #{post.date}
+      td #{post.username}
+      td #{post.message}
+      if (post.username == loggedInUserName)
+       td
+        a(href="/media/edit/"+post._id title="Edit" id="editLink") Edit
+       td
+        a(href="/media/delete/"+post._id title="Delete" id="deleteLink" onclick="return confirm(\'Are you sure you want to delete this media post\');") Delete
+
+include footer
+
