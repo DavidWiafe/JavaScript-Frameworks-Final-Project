@@ -1,0 +1,35 @@
+﻿// 
+ File Name: media.pug
+ Author: David Wiafe
+ Description: Media screen where users can Save a post,
+              Read post
+
+include header
+
+block content
+
+ h1 Media Feed #{todayDate}
+ 
+ div
+  form(method="post" action="/media/add")
+   div
+    label Message
+    input(type="text" name="messageText")
+   
+   hidden
+    div
+     label Date
+     input(type="date" name="theDate" value=todayDate)
+
+    div
+     label username
+     input(type="text" name="username" value=username)
+
+   input(type="submit" value="Post")
+
+
+
+
+
+
+include footer

@@ -29,6 +29,3 @@ Note: The double quotes are not required
 2. git checkout "branch name"
 3. git pull
 4. git push -u origin "branch name"
-
-
-

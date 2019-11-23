@@ -41,6 +41,9 @@
     <Compile Include="routes\login.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\media.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\register.js">
       <SubType>Code</SubType>
     </Compile>
@@ -48,6 +51,12 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
+    <Content Include="views\add.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\edit.pug">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\footer.pug">
       <SubType>Code</SubType>
     </Content>
@@ -58,6 +67,12 @@
     <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
     <Content Include="views\login.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\media.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\post.pug">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\register.pug">
