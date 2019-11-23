@@ -3,7 +3,7 @@
  File Name: register.js
  Author: David Wiafe
  Description: Handle register GET & POST request. 
-              Allow users to create an Account.
+              Allow users to create an Account. 
 */
 
 var express = require('express');
