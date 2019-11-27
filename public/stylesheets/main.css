@@ -29,87 +29,87 @@ div {
 }
 
 footer p {
-    text-align: right;
+ text-align: right;
 }
 
 header {
-    font-size: 1.8rem;
+font-size: 1.8rem;
 }
 
-    header img {
-        float: left;
-    }
+header img {
+  float: left;
+}
 
-    header h1,
-    header h2 {
-        text-align: right;
-    }
+header h1,
+header h2 {
+   text-align: right;
+}
 
-    header h1 {
-        margin-bottom: 0;
-    }
+header h1 {
+   margin-bottom: 0;
+}
 
-    header h2 {
-        margin-top: 0;
-        text-transform: uppercase;
-    }
+header h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
 
-    header ul {
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style-type: none;
-    }
+header ul {
+ padding-left: 0;
+ margin-bottom: 0;
+ list-style-type: none;
+ }
 
-    header li {
-        display: inline-block;
-    }
+header li {
+ display: inline-block;
+}
 
-    header a {
-        display: block;
-    }
+header a {
+display: block;
+}
 
-    header ul li {
-        position: relative;
-    }
+header ul li {
+position: relative;
+}
 
-    header ul ul {
-        position: absolute;
-        left: -9999px;
-        background-color: white;
-        width: 15em;
-        z-index: 1;
-        border: 3px solid black;
-    }
+header ul ul {
+position: absolute;
+left: -9999px;
+background-color: white;
+width: 15em;
+z-index: 1;
+border: 3px solid black;
+}
 
-        header ul ul li {
-            display: block;
-        }
+header ul ul li {
+display: block;
+}
 
-    header li:hover ul {
-        Left: auto;
-    }
+header li:hover ul {
+Left: auto;
+}
 
-    header a:link {
-        padding: 0.5em;
-        text-decoration: none;
-        background-color: lightpink;
-        color: black;
-    }
+header a:link {
+padding: 0.5em;
+text-decoration: none;
+background-color: lightpink;
+color: black;
+}
 
-    header a:visited {
-        color: grey;
-    }
+header a:visited {
+color: grey;
+}
 
-    header a:focus {
-        background-color: orange;
-    }
+header a:focus {
+Background-color: orange;
+}
 
-    header a:hover {
-        background-color: grey;
-        color: lightpink;
-    }
+header a:hover {
+background-color: grey;
+color: lightpink;
+}
 
-    header a:active {
-        background-color: yellow;
-        color: red;
-    }
+header a:active {
+background-color: yellow;
+color: red;
+}
