@@ -21,7 +21,9 @@ This application is a basic social media site allowing user to post info about t
 - password-hash [More info](https://www.npmjs.com/package/password-hash)
 <<<<<<< HEAD
 
+Website is live at: https://daveandtylerssocialmedia.herokuapp.com/ 
 
+Using CSS frameworks from myself and https://Bootswatch.com 
 
 
 
